@@ -1,1 +1,139 @@
-
+[
+	{
+		"name": "Pionier",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 20,
+		"cost": 110,
+		"requiredTech": "Industrialization",
+		"uniques": [
+			"Can build [Road] improvements on tiles",
+			"Can build [Railroad] improvements on tiles",
+			"Can build [Fort] improvements on tiles",
+			"Can build [Stacheldrahtverhau] improvements on tiles",
+			"Can build [Panzersperre] improvements on tiles",
+			"Can build [All Road] improvements at a [+50]% rate"
+		],
+		"attackSound": "shot",
+		"civilopediaText": [
+			{"text": "Kampfingenieur: baut Strassen, Schienen, Forts und Feldbefestigungen schneller als ein Arbeiter, kaempft aber nur mittelmaessig."}
+		]
+	},
+	{
+		"name": "Flak",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 22,
+		"cost": 190,
+		"requiredTech": "Flight",
+		"uniques": [
+			"[+100]% Strength <vs [Air] units>",
+			"[+1] Air Interception Range",
+			"[+40]% chance to intercept air attacks"
+		],
+		"attackSound": "shot",
+		"civilopediaText": [
+			{"text": "Fliegerabwehrkanone: stark gegen Flugzeuge, am Boden aber nur eine durchschnittliche Verteidigung."}
+		]
+	},
+	{
+		"name": "Panzergrenadier",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 42,
+		"cost": 280,
+		"requiredTech": "Combined Arms",
+		"uniques": [
+			"Rough terrain penalty",
+			"[+15]% Strength <when stacked with a [Halbkettenfahrzeug] unit>"
+		],
+		"attackSound": "shot",
+		"civilopediaText": [
+			{"text": "Motorisierte Infanterie: schnell, aber in schwerem Gelaende (Huegel, Wald) gebremst. Kaempft besser zusammen mit einem Halbkettenfahrzeug."}
+		]
+	},
+	{
+		"name": "Halbkettenfahrzeug",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 22,
+		"cost": 150,
+		"requiredTech": "Combustion",
+		"requiredResource": "Oil",
+		"uniques": [
+			"Transfer Movement to [Gunpowder]"
+		],
+		"attackSound": "shot",
+		"civilopediaText": [
+			{"text": "Gepanzerter Truppentransporter: Infanterie auf dem gleichen Feld bewegt sich mit der Geschwindigkeit des Fahrzeugs. Selbst nur leicht gepanzert."}
+		]
+	},
+	{
+		"name": "Zeppelin",
+		"unitType": "Civilian",
+		"movement": 4,
+		"cost": 60,
+		"requiredTech": "Flight",
+		"uniques": [
+			"All tiles cost 1 movement",
+			"May travel on Water tiles without embarking",
+			"Can pass through impassable tiles",
+			"[+3] Sight",
+			"Can see over obstacles",
+			"Uncapturable"
+		],
+		"civilopediaText": [
+			{"text": "Luftschiff zur Aufklaerung: fliegt ueber Berge und Meer und sieht sehr weit, kann aber nicht kaempfen."}
+		]
+	},
+	{
+		"name": "Transportflugzeug",
+		"unitType": "Helicopter",
+		"movement": 6,
+		"strength": 15,
+		"cost": 220,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"uniques": [
+			"All tiles cost 1 movement",
+			"May travel on Water tiles without embarking",
+			"Can carry [2] [Land] units",
+			"Cannot attack"
+		],
+		"civilopediaText": [
+			{"text": "Transportflugzeug (Ju 52): bringt bis zu zwei Landeinheiten ueber Gelaende und Wasser. Selbst kaum bewaffnet."}
+		]
+	},
+	{
+		"name": "Drohne",
+		"unitType": "Bomber",
+		"movement": 6,
+		"strength": 10,
+		"rangedStrength": 35,
+		"range": 6,
+		"cost": 90,
+		"requiredTech": "Robotics",
+		"uniques": [
+			"Self-destructs when attacking"
+		],
+		"civilopediaText": [
+			{"text": "Billige Kampfdrohne: schwacher Angriff, wird beim Einsatz verbraucht und ist im Gegensatz zu Raketen abfangbar."}
+		]
+	},
+	{
+		"name": "Landungsboot",
+		"unitType": "Melee Water",
+		"movement": 4,
+		"strength": 10,
+		"cost": 90,
+		"requiredTech": "Combustion",
+		"uniques": [
+			"Cannot enter ocean tiles",
+			"Can carry [2] [Land] units"
+		],
+		"attackSound": "cannon",
+		"civilopediaText": [
+			{"text": "Kuestenlandungsboot: traegt zwei Landeinheiten, bleibt aber in Kuestennaehe und ist im Gefecht schwach."}
+		]
+	}
+]
